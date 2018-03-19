@@ -1,5 +1,5 @@
 import numpy as np
-
+from octree import *
 #Added Functions
 
 def local_PCA(points):

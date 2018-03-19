@@ -32,8 +32,8 @@ for filepath in list_filepath:
               ['x', 'y', 'z', 'patches', 'class'])
     print("Done")
     print("Computing the label for each patch")
-    label_per_patch = labelize_patch(id_patches, y)
-    new_label = np.zeros(y.shape[0])
+    label_per_patch = labelize_patch(id_patches, label)
+    new_label = np.zeros(label.shape[0])
     new_label = label_per_patch[id_patches]
     write_ply(filepath+"_patch_label.ply",np.hstack((xyz,
                                                          id_patches.reshape(-1,1),
